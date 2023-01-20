@@ -10,22 +10,23 @@ To get started with building an environment to run my game, you need to have a r
 
 ```
 pip install virtualenv
-pip install ipynotebook
-venv ..
-source ..
+pip install jupyterlab
+python3 -m venv /path/to/new/virtual/environment
+source bin/activate
 ```
 
 After installing jupyter notebook, if not already installed, you can create a kernel inside of your virtual environment.
 
 ```
-ipynb ..
+ipython kernel install --user --name=venv
 ```
 
 Now you will need to install the required packages within Brian2, Brian2, and Pygame. These can be found in the repository, but I will reiterate them below.
 
 ```
-pip install Brian2
-pip install ..
+pip install brian2
+pip install matplotlib pytest ipython notebook
+pip install brian2tools
 ```
 
 You can now run the ipynb file in the repository inside of your jupyter notebook by using the command `jupyter notebook` and then opening up the file. From here, you just need to run the file and then enjoy playing the game.
