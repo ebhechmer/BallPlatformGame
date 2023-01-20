@@ -11,6 +11,7 @@ To get started with building an environment to run my game, you need to have a r
 ```
 pip install virtualenv
 pip install jupyterlab
+pip install notebook
 python3 -m venv /path/to/new/virtual/environment
 source bin/activate
 ```
